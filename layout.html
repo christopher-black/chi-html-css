@@ -6,33 +6,42 @@
     <link href="style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Page Header</h1>
-      <p>Description text</p>
-    </header>
-    <nav>
-      <span>One</span>
-      <span>Two</span>
-      <span>Three</span>
-    </nav>
-    <div class="container">
-      <div class="box topContent">
-        <div class="floating">
-          <div class="green-box">
+    <div id="wrapper">
+      <header>
+        <h1>Burrito Cat</h1>
+        <p>Description text</p>
+      </header>
+      <nav>
+        <div class="nav-container">
+          <a href="https://google.com"><span>One</span></a>
+          <a href="#taco"><span>Two</span></a>
+          <a href="intro.html"><span>Three</span></a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="box topContent">
+          <div class="floating">
+            <div class="green-box">
+              <img id="profileImage" title="cat" src="imgs/burrito-cat.png" alt="Cat wrapped in cardboard.">
+            </div>
+          </div>
+          <div class="floating">
+            <p class="copy-text">
+              <!-- Copy text -->
+              Burrito cat looks comfortable rolled up in paper.
+            </p>
           </div>
         </div>
-        <div class="floating">
+        <div class="box middleContent">
+          More content
+        </div>
+        <div class="box bottomContent">
+          <a name="taco"><span class="copy-text">This is content on the bottom of the page<span></a>
         </div>
       </div>
-      <div class="box middleContent">
-
-      </div>
-      <div class="box bottomContent">
-
-      </div>
+      <footer>
+        Copyright 2017
+      </footer>
     </div>
-    <footer>
-      Copyright 2017
-    </footer>
   </body>
 </html>

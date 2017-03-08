@@ -1,6 +1,8 @@
+/* Comma (,) applies styles to both html & body tags */
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 h1 {
@@ -9,21 +11,36 @@ h1 {
   word-spacing: 0.1em;
   text-transform: uppercase;
   font-family: sans-serif;
+  color: darkslategray;
 }
 
+/* header is an HTML5 element */
 header {
-  background-color: red;
+  background-color: lightseagreen;
   text-align: center;
   padding: 20px;
 }
 
 nav {
-  background-color: salmon;
+  background-color: darkcyan;
   font-size: 30px;
-
+  color: white;
+  padding: 20px;
+  width: 100%;
+  /* This centers the navigation. */
+  text-align: center;
 }
 
-footer {
+/* All spans that are underneath the nav */
+nav span {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+/* Fixed footer */
+/*footer {
   background-color: black;
   color: white;
   font-size: 30px;
@@ -31,41 +48,99 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+}*/
+
+/* Flow to bottom */
+footer {
+  background-color: salmon;
+  color: darkred;
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:visited {
+  color: blue;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.nav-container {
+  display: inline;
 }
 
 .box {
-  height: 100px;
+  height: 300px;
 }
 
 .container {
-  max-width:780px;
+  max-width:900px;
   margin: 0 auto;
 }
 
 .topContent {
-  background-color: blue;
+  background-color: snow;
   height: 300px;
 }
 
+/* Float divs to that they wrap on the page */
 .floating {
   float: left;
   height: 300px;
   width: 50%;
-  background-color: gray;
+  background-color: snow;
 }
+
 .green-box {
-  height: 100%;
   width: 100%;
-  border-radius: 50%;
-  background-color: green;
+  height: 100%;
+  /*border-radius: 50%;*/
+  background-color: snow;
+}
+
+/* > only selects immediate children */
+.green-box > img {
+  border-radius: 100px;
+  padding: 60px;
+}
+
+.red-box {
+  width: 200px;
+  height: 200px;
+  background-color: darkred;
+}
+
+.copy-text {
+  font-size: 32px;
+  padding: 20px;
+  color: black;
 }
 
 .middleContent {
-  background-color: green;
-
+  background-color: snow;
 }
 
 .bottomContent {
-  background-color: blue;
+  background-color: snow;
   height: 700px;
+}
+
+#profileImage {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
 }
