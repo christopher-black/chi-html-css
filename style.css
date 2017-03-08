@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: salmon;
+  font-size: 30px;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+}
+
+.container {
+  max-width:780px;
+  margin: 0 auto;
+}
+
+.topContent {
+  background-color: blue;
+  height: 300px;
+}
+
+.floating {
+  float: left;
+  height: 300px;
+  width: 50%;
+  background-color: gray;
+}
+.green-box {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.middleContent {
+  background-color: green;
+
+}
+
+.bottomContent {
+  background-color: blue;
+  height: 700px;
+}
