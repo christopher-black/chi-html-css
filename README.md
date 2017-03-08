@@ -1,5 +1,5 @@
 # Chi HTML / CSS
-Content and lecture notes from week 1, day 3.
+Content and lecture notes from week 1, day 3. View the final website [here](https://christopher-black.github.io/chi-html-css/layout.html).
 
 ### Notes
 Layout your content prior to digging into specific components.
